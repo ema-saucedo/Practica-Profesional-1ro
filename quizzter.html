@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzter</title>
+    <link
+      rel="icon"
+      href="assets/img/ChatGPT Image 26 may 2026, 02_40_00 p.m.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+        <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px); 
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        body {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+  </head>
+  <!-- Cuerpo de la página  -->
+  <body class="fondo-quizzter">
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <a href="index.html"><img src="assets/img/logo.PNG" id="logoPagina" /></a>
+        <a href="quizzter.html" id="navLink">Quizzter</a>
+        <button id="btn-cerrarSesion" type="button" class="btn btn-danger fw-medium">Cerrar Sesión</button>
+      </nav>
+    </header>
+
+    <!-- Paso 1: Selección de materia -->
+    <section id="seccion-materias" class="seccion-selector">
+      <div class="encabezado-selector">
+        <h1>¿Qué materia querés repasar?</h1>
+        <p>Elegí una materia para comenzar el quiz</p>
+      </div>
+      <div class="grilla-materias">
+        <button class="tarjeta-materia" data-materia="tlp">
+          <span class="icono-materia">💻</span>
+          <h3>TLP</h3>
+          <p>Taller de Lenguajes de Programación</p>
+        </button>
+        <button class="tarjeta-materia" data-materia="matematicas">
+          <span class="icono-materia">📐</span>
+          <h3>Matemáticas</h3>
+          <p>Álgebra, geometría y lógica</p>
+        </button>
+        <button class="tarjeta-materia tarjeta-bloqueada" disabled aria-disabled="true">
+          <div class="contenido-bloqueado">
+            <span class="icono-materia">🗄️</span>
+            <h3>Base de Datos</h3>
+            <p>Modelado, SQL y consultas</p>
+          </div>
+          <div class="overlay-proximamente">
+            <span>Próximamente</span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Paso 2: Selección de nivel de dificultad -->
+    <section id="seccion-nivel" class="seccion-selector" style="display:none;">
+      <div class="encabezado-selector">
+        <h1>Elegí el nivel de dificultad</h1>
+        <p id="texto-materia-elegida">Materia seleccionada</p>
+      </div>
+      <div class="grilla-niveles">
+        <button class="tarjeta-nivel" data-nivel="facil">
+          <span class="icono-nivel">🟢</span>
+          <h3>Fácil</h3>
+        </button>
+        <button class="tarjeta-nivel" data-nivel="medio">
+          <span class="icono-nivel">🟡</span>
+          <h3>Medio</h3>
+        </button>
+        <button class="tarjeta-nivel" data-nivel="dificil">
+          <span class="icono-nivel">🔴</span>
+          <h3>Difícil</h3>
+        </button>
+      </div>
+      <button id="btn-volver-materias" class="btn-volver">← Volver a materias</button>
+    </section>
+
+    <!-- Paso 3: Quiz -->
+    <div id="contenedor-quiz" style="display:none;">
+      <div class="tarjeta-quiz">
+        <div class="encabezado-quiz">
+          <span>Pregunta <strong id="numero-pregunta-actual">1</strong> de <strong id="total-preguntas">20</strong></span>
+        </div>
+        
+        <h2 id="texto-pregunta">¿Qué propiedad de CSS se usa para activar Flexbox?</h2>
+        
+        <div id="contenedor-opciones"></div>
+        
+        <button id="btn-siguiente" style="display: none;">Siguiente Pregunta</button>
+      </div>
+    </div>
+
+<!-- footer  -->
+   <div id="footerCont">
+      <footer>
+        <div>
+          <p>&copy; 2026 Quizzter. Todos los derechos reservados.</p>
+          <div>
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Soporte</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/db.js"></script>
+    <script src="assets/js/quizzter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+h5 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #20945b;
+}
+
+a:hover {
+    color: #29b16b;
+    transition: color 0.3s ease;
+}
+
+.btn {
+    background-color: #20945b;
+    color: white;
+    margin-top: 10px;
+}
+
+body {
+    background-color: #091112;
+}
+
+.mb-4 {
+    color: #29b16b;
+}
+
+.mb-3 {
+
+    color: white;
+}
+
+img {
+    width: 9%;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+ul {
+    text-align: center;
+}
+
+#botonInicio {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#botonInicio:hover {
+    background-color: #29b16b;
+    transition: color 0.9s ease;
+    color: white;
+}
+
+#finalFeliz {
+    margin-top: 20px;
+}
+
+#finalFeliz>h4 {
+    color: #29b16b;
+    padding: 10px;
+}
+
+#finalFeliz>p {
+    color: white;
+}
+
+.g_id_signin {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h5:hover {
+    cursor: default;
+}
+
+p:hover {
+    cursor: default;
+}
+
+h4:hover {
+    cursor: default;
+}
+
+h2:hover {
+    cursor: default;
+}
+
+ul:hover {
+    cursor: default;
+}
+
+#registroSegundaParte {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.modal-header {
+    background-color: #091112;
+    border: transparent;
+}
+
+.modal-title {
+    color: #29b16b;
+}
+
+.modal-body {
+    background-color: #091112;
+    color: white;
+}
+
+.modal-footer {
+    background-color: #091112;
+    border: transparent;
+}
+
+.dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item:active {
+    background-color: #29b16b;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+}

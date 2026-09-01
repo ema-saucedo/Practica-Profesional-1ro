@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fondo-quizzter{
+    background-color: #0a1312;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+  filter: invert(0);
+}
+
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next {
+  background-color: rgba(255, 255, 255, 0.3); 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+}
+#logoPagina {
+    width: 230px;
+    height: 55px;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+#btn-cerrarSesion {
+  margin: 0 40px 0 auto;
+  font-size: 20px;
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    background-color: rgba(15, 37, 30, 0.8) !important;
+    padding-bottom: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#navLink {
+    padding: 15px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+#navLink:hover {
+  color: #1a6149;
+  background-color:  #1a61493a;;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+#footerCont {
+  margin-top: 40px;
+  background-color: #111d19;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid rgba(255, 251, 251, 0.429); 
+}
+
+#footerCont footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;}
+
+#footerCont p {
+  color: #667570; 
+  font-size: 13px;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+
+#footerCont div {
+  display: flex;
+  justify-content: center;
+  gap: 25px; 
+}
+
+
+#footerCont a {
+  color: #a3b3ae; 
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+
+#footerCont a:hover {
+  color:#0b78224c; 
+}
+
+/* ____________________________________________________________________________
+CSS DEL QUIZZTER
+____________________________________________________________________________ */
+
+#contenedor-quiz {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.tarjeta-quiz {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado-quiz {
+  color: #667570;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tarjeta-quiz h2 {
+  color: #0b1411; 
+  font-size: 24px;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+#contenedor-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+#contenedor-opciones button {
+  background-color: #f4f6f5;
+  color: #0b1411;
+  border: 2px solid #e2e8e6;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#contenedor-opciones button:hover {
+  border-color: #198754;
+  background-color: rgba(25, 135, 84, 0.05);
+}
+
+#contenedor-opciones button.correcto {
+  background-color: #d1e7dd;
+  border-color: #198754;
+  color: #0f5132;
+}
+
+#contenedor-opciones button.incorrecto {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #842029;
+}
+
+#btn-siguiente {
+  background-color: #135f3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.2s;
+}
+
+#btn-siguiente:hover {
+  background-color: #146c43;
+}
+
+/* Estilos para los enlaces del navegador corregidos */
+.enlace-nav {
+  padding: 15px 20px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.enlace-nav:hover {
+  color: #198754 !important;
+}
+
+/* ____________________________________________________________________________
+CSS DEL SELECTOR DE MATERIA Y NIVEL
+____________________________________________________________________________ */
+
+.seccion-selector {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.encabezado-selector {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.encabezado-selector h1 {
+  color: white;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.encabezado-selector p {
+  color: #a3b3ae;
+  font-size: 16px;
+}
+
+/* Grilla de materias */
+.grilla-materias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.tarjeta-materia {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 35px 25px;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.tarjeta-materia:hover {
+  transform: translateY(-6px);
+  border-color: #198754;
+  box-shadow: 0 20px 40px rgba(25, 135, 84, 0.35);
+}
+
+.icono-materia {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tarjeta-materia h3 {
+  color: #0b1411;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.tarjeta-materia p {
+  color: #667570;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Tarjeta de materia bloqueada / "Próximamente" */
+.tarjeta-bloqueada {
+  position: relative;
+  cursor: not-allowed;
+  overflow: hidden;
+}
+
+.tarjeta-bloqueada:hover {
+  transform: none;
+  border-color: transparent;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.contenido-bloqueado {
+  filter: blur(3px);
+  opacity: 0.55;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  user-select: none;
+}
+
+.overlay-proximamente {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.overlay-proximamente span {
+  background-color: #135f3c;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Grilla de niveles */
+.grilla-niveles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-nivel {
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 28px 15px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  text-align: center;
+}
+
+.tarjeta-nivel:hover {
+  transform: translateY(-6px);
+  border-color: #198754;
+  box-shadow: 0 18px 35px rgba(25, 135, 84, 0.35);
+}
+
+.icono-nivel {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tarjeta-nivel h3 {
+  color: #0b1411;
+  font-size: 18px;
+}
+
+.btn-volver {
+  background: transparent;
+  color: #a3b3ae;
+  border: 1px solid #a3b3ae;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#btn-reintentar {
+  background-color: #135f3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.2s;
+}
+
+#btn-reintentar:hover {
+  background-color: #146c43;
+}
