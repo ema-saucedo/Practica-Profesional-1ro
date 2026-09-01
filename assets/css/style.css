@@ -399,3 +399,538 @@ ____________________________________________________________________________ */
 #btn-reintentar:hover {
   background-color: #146c43;
 }
+
+.code-reminder-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 60px 0 120px;
+
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.code-reminder-header {
+  margin-bottom: 35px;
+}
+
+
+.code-reminder-label {
+  color: #43d17d;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+.code-reminder-header h1 {
+  color: white;
+
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+
+.code-reminder-header p {
+  color: #a3b3ae;
+
+  max-width: 650px;
+}
+
+/* PROGRESO */
+
+.code-progreso-card {
+  background-color: #111d19;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 14px;
+
+  padding: 22px;
+
+  margin-bottom: 40px;
+}
+
+
+.code-progreso-info {
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #a3b3ae;
+
+  margin-bottom: 12px;
+}
+
+
+.code-progreso-info div {
+  display: flex;
+
+  gap: 15px;
+}
+
+
+#porcentajeCode {
+  color: #43d17d;
+}
+
+
+.barra-code {
+  width: 100%;
+  height: 8px;
+
+  background-color: #0a1312;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+
+#progresoCode {
+  width: 0%;
+  height: 100%;
+
+  background-color: #198754;
+
+  transition: width 0.4s ease;
+}
+
+.code-modulos h2 {
+  color: white;
+
+  margin-bottom: 25px;
+}
+
+
+.code-modulos-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 20px;
+}
+
+
+.code-modulo-card {
+  background-color: #111d19;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 14px;
+
+  padding: 25px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.code-modulo-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #198754;
+}
+
+
+.code-modulo-icono {
+  font-size: 40px;
+
+  margin-bottom: 15px;
+}
+
+
+.code-modulo-numero {
+  color: #43d17d;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 5px;
+}
+
+
+.code-modulo-card h3 {
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+
+.code-modulo-card p {
+  color: #a3b3ae;
+
+  min-height: 50px;
+}
+
+.code-modulo-progreso {
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #667570;
+
+  font-size: 13px;
+
+  margin-top: 20px;
+
+  margin-bottom: 8px;
+}
+
+
+.barra-modulo {
+  width: 100%;
+
+  height: 6px;
+
+  background-color: #0a1312;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 18px;
+}
+
+
+.barra-modulo div {
+  height: 100%;
+
+  background-color: #198754;
+}
+
+
+.btn-code-modulo {
+  width: 100%;
+
+  background-color: #135f3c;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.btn-code-modulo:hover {
+  background-color: #198754;
+}
+
+
+.modulo-bloqueado {
+  opacity: 0.5;
+}
+
+
+.modulo-bloqueado:hover {
+  transform: none;
+
+  border-color: rgba(255,255,255,0.1);
+}
+
+
+.modulo-bloqueado .btn-code-modulo {
+  background-color: #33413d;
+
+  cursor: not-allowed;
+}
+
+/* ____________________________________________________________________________
+LECCIONES CODE REMINDER
+____________________________________________________________________________ */
+
+.leccion-container {
+  width: 90%;
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 50px 0 120px;
+
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.leccion-card {
+  background-color: #111d19;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 16px;
+
+  padding: 35px;
+}
+
+
+.leccion-superior {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  color: #a3b3ae;
+}
+
+
+.volver-code {
+  color: #43d17d;
+
+  text-decoration: none;
+}
+
+
+.volver-code:hover {
+  color: #65e699;
+}
+
+
+.barra-leccion {
+  width: 100%;
+  height: 7px;
+
+  background-color: #0a1312;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 30px;
+}
+
+
+#progresoLeccion {
+  height: 100%;
+
+  background-color: #198754;
+
+  transition: width 0.4s ease;
+}
+
+.leccion-categoria {
+  color: #43d17d;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+.leccion-card > h1 {
+  color: white;
+
+  font-size: 34px;
+
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+
+.leccion-bloque {
+  margin-bottom: 30px;
+}
+
+
+.leccion-bloque h2 {
+  color: white;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+}
+
+
+.leccion-bloque p {
+  color: #a3b3ae;
+
+  line-height: 1.6;
+}
+
+
+.leccion-bloque pre,
+.codigo-ejercicio {
+  background-color: #0a1312;
+
+  color: #7ee2a8;
+
+  border: 1px solid #33413d;
+
+  border-radius: 8px;
+
+  padding: 15px;
+
+  overflow-x: auto;
+
+  font-family: Consolas, monospace;
+}
+
+.practica-code {
+  background-color: #0a1312;
+
+  border: 1px solid #33413d;
+
+  border-radius: 12px;
+
+  padding: 25px;
+
+  margin-top: 40px;
+}
+
+
+.practica-label {
+  color: #43d17d;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+.practica-code h2 {
+  color: white;
+
+  font-size: 20px;
+
+  margin-top: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+#respuestaPractica {
+  width: 100%;
+
+  background-color: #111d19;
+
+  color: white;
+
+  border: 1px solid #33413d;
+
+  border-radius: 7px;
+
+  padding: 12px;
+
+  margin-bottom: 12px;
+
+  outline: none;
+}
+
+
+#respuestaPractica:focus {
+  border-color: #198754;
+}
+
+#btnComprobarPractica,
+#btnSiguienteLeccion {
+  width: 100%;
+
+  background-color: #135f3c;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+#btnComprobarPractica:hover,
+#btnSiguienteLeccion:hover {
+  background-color: #198754;
+}
+
+
+#btnSiguienteLeccion {
+  margin-top: 15px;
+}
+
+
+#resultadoPractica {
+  margin-top: 15px;
+}
+
+
+.code-correcto {
+  color: #43d17d;
+
+  background-color: rgba(25,135,84,0.1);
+
+  border: 1px solid #198754;
+
+  border-radius: 8px;
+
+  padding: 15px;
+}
+
+
+.code-correcto p {
+  color: #a3b3ae;
+
+  margin-top: 8px;
+
+  margin-bottom: 0;
+}
+
+
+.code-error {
+  color: #dc6b73;
+
+  background-color: rgba(220,107,115,0.08);
+
+  border: 1px solid #7a3c42;
+
+  border-radius: 8px;
+
+  padding: 15px;
+}
+
+
+.modulo-completado-code {
+  text-align: center;
+
+  padding: 30px 10px;
+}
+
+
+.code-trofeo {
+  font-size: 65px;
+
+  margin-bottom: 15px;
+}
+
+
+.modulo-completado-code h2 {
+  color: white;
+}
+
+
+.modulo-completado-code p {
+  color: #a3b3ae;
+}
