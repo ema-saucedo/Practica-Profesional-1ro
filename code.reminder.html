@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Code Reminder - Quizzter</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+</head>
+
+
+<body class="fondo-quizzter">
+
+  <header>
+
+    <nav>
+
+      <a href="index.html">
+        <img
+          src="assets/media/img/logo.PNG"
+          id="logoPagina"
+        >
+      </a>
+
+      <a href="quizzter.html" id="navLink">
+        Quizzter
+      </a>
+
+      <a href="daily-challenges.html" id="navLink">
+        Daily Challenges
+      </a>
+
+      <a href="code-reminder.html" id="navLink">
+        Code Reminder
+      </a>
+
+      <button
+        id="btn-cerrarSesion"
+        type="button"
+        class="btn btn-danger fw-medium"
+      >
+        Cerrar Sesión
+      </button>
+
+    </nav>
+
+  </header>
+
+
+  <main class="code-reminder-container">
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="code-reminder-header">
+
+      <span class="code-reminder-label">
+        CODE REMINDER
+      </span>
+
+      <h1>Aprendé JavaScript practicando</h1>
+
+      <p>
+        Aprendé los conceptos más utilizados de JavaScript,
+        entendé cómo funcionan y practicalos con ejercicios.
+      </p>
+
+    </section>
+
+
+    <!-- PROGRESO -->
+
+    <section class="code-progreso-card">
+
+      <div class="code-progreso-info">
+
+        <div>
+          <span>Tu progreso</span>
+
+          <strong id="porcentajeCode">
+            0%
+          </strong>
+        </div>
+
+        <span id="leccionesCompletadas">
+          0 lecciones completadas
+        </span>
+
+      </div>
+
+
+      <div class="barra-code">
+
+        <div id="progresoCode"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MÓDULOS -->
+
+    <section class="code-modulos">
+
+      <h2>Ruta de aprendizaje</h2>
+
+
+      <div
+        class="code-modulos-grid"
+        id="contenedorModulos"
+      >
+
+        <!-- Los módulos los crea JavaScript -->
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="assets/js/code.reminder.js"></script>
+
+</body>
+
+</html>
