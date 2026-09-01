@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Código Roto - Quizzter</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="fondo-quizzter">
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="assets/media/img/logo.PNG" id="logoPagina" />
+        </a>
+
+        <a href="quizzter.html" id="navLink">Quizzter</a>
+        <a href="desafios.html" id="navLink">Daily Challenges</a>
+        <a href="code-reminder.html" id="navLink">Code Reminder</a>
+
+        <button
+          id="btn-cerrarSesion"
+          type="button"
+          class="btn btn-danger fw-medium"
+        >
+          Cerrar Sesión
+        </button>
+      </nav>
+    </header>
+
+    <main class="codigo-roto-container">
+      <section class="codigo-roto-card">
+        <div class="codigo-roto-header">
+          <div>
+            <span class="codigo-roto-label">DAILY CHALLENGE</span>
+            <h1>Código Roto</h1>
+            <p>Encontrá el error y escribí la línea corregida.</p>
+          </div>
+
+          <div class="codigo-roto-estado-superior">
+            <div class="codigo-roto-nivel">
+              Nivel <strong id="numeroCodigoRoto">1</strong> / 5
+            </div>
+
+            <div class="codigo-roto-tiempo" id="contenedorTiempoCodigoRoto">
+              ⏱ <strong id="tiempoCodigoRoto">01:30</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="barra-codigo-roto">
+          <div id="progresoCodigoRoto"></div>
+        </div>
+
+        <div class="codigo-roto-info">
+          <span id="dificultadCodigoRoto" class="dificultad-codigo-roto">
+            FÁCIL
+          </span>
+
+          <h2 id="objetivoCodigoRoto">Objetivo</h2>
+
+          <p id="descripcionCodigoRoto"></p>
+        </div>
+
+        <div class="codigo-roto-editor">
+          <div class="codigo-roto-editor-top">
+            <span>script.js</span>
+            <span>⚠ Código con error</span>
+          </div>
+
+          <pre><code id="codigoConError"></code></pre>
+        </div>
+
+        <div class="codigo-roto-recordatorio">
+          <div class="codigo-roto-recordatorio-titulo">
+            📘 Recordá
+          </div>
+
+          <p id="recordatorioCodigoRoto"></p>
+        </div>
+
+        <div class="codigo-roto-respuesta">
+          <label for="respuestaCodigoRoto">
+            Escribí la línea corregida:
+          </label>
+
+          <input
+            type="text"
+            id="respuestaCodigoRoto"
+            placeholder='Ej: const boton = document.getElementById("boton");'
+            autocomplete="off"
+            spellcheck="false"
+          />
+
+          <button id="btnComprobarCodigoRoto">
+            Comprobar corrección
+          </button>
+
+          <div id="mensajeCodigoRoto"></div>
+
+          <button id="btnSiguienteCodigoRoto" class="oculto">
+            Siguiente nivel →
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/codigo-roto.js"></script>
+  </body>
+</html>
