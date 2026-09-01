@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
 
@@ -22,17 +21,15 @@
   >
 </head>
 
-
 <body class="fondo-quizzter">
 
   <header>
-
     <nav>
-
       <a href="index.html">
         <img
-          src="assets/media/img/logo.PNG"
+          src="assets/img/logo.PNG"
           id="logoPagina"
+          alt="Quizzter"
         >
       </a>
 
@@ -40,33 +37,15 @@
         Quizzter
       </a>
 
-      <a href="daily-challenges.html" id="navLink">
-        Daily Challenges
-      </a>
-
-      <a href="code-reminder.html" id="navLink">
+      <a href="code.reminder.html" id="navLink">
         Code Reminder
       </a>
-
-      <button
-        id="btn-cerrarSesion"
-        type="button"
-        class="btn btn-danger fw-medium"
-      >
-        Cerrar Sesión
-      </button>
-
     </nav>
-
   </header>
-
 
   <main class="code-reminder-container">
 
-    <!-- PRESENTACIÓN -->
-
     <section class="code-reminder-header">
-
       <span class="code-reminder-label">
         CODE REMINDER
       </span>
@@ -77,14 +56,9 @@
         Aprendé los conceptos más utilizados de JavaScript,
         entendé cómo funcionan y practicalos con ejercicios.
       </p>
-
     </section>
 
-
-    <!-- PROGRESO -->
-
     <section class="code-progreso-card">
-
       <div class="code-progreso-info">
 
         <div>
@@ -101,38 +75,24 @@
 
       </div>
 
-
       <div class="barra-code">
-
         <div id="progresoCode"></div>
-
       </div>
-
     </section>
 
-
-    <!-- MÓDULOS -->
-
     <section class="code-modulos">
-
       <h2>Ruta de aprendizaje</h2>
-
 
       <div
         class="code-modulos-grid"
         id="contenedorModulos"
-      >
-
-        <!-- Los módulos los crea JavaScript -->
-
-      </div>
-
+      ></div>
     </section>
 
   </main>
 
+  <script src="assets/js/code.data.js"></script>
   <script src="assets/js/code.reminder.js"></script>
 
 </body>
-
 </html>
